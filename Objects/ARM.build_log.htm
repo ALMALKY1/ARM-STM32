@@ -1,0 +1,427 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.32.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Mohamed Almalky, non, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.32.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14.1
+Assembler:       Armasm.exe V6.14.1
+Linker/Locator:  ArmLink.exe V6.14.1
+Library Manager: ArmAr.exe V6.14.1
+Hex Converter:   FromElf.exe V6.14.1
+CPU DLL:         SARMCM3.DLL V5.32.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.9.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+E:\ARM_DRIVERS\ARM.uvprojx
+Project File Date:  02/06/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14.1', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+NVIC_Program.c(11): warning: In file included from...
+./NVIC_Private.h(13): warning: In file included from...
+./NVIC_Config.h(38): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+NVIC_Program.c(96): warning: variable 'Value' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+        else if ((U8Interrupt_Number >31) && (U8Interrupt_Number <=63))
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NVIC_Program.c(102): note: uninitialized use occurs here
+        return Value ;
+               ^~~~~
+NVIC_Program.c(96): note: remove the 'if' if its condition is always true
+        else if ((U8Interrupt_Number >31) && (U8Interrupt_Number <=63))
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NVIC_Program.c(96): warning: variable 'Value' is used uninitialized whenever '&&' condition is false [-Wsometimes-uninitialized]
+        else if ((U8Interrupt_Number >31) && (U8Interrupt_Number <=63))
+                 ^~~~~~~~~~~~~~~~~~~~~~~~
+NVIC_Program.c(102): note: uninitialized use occurs here
+        return Value ;
+               ^~~~~
+NVIC_Program.c(96): note: remove the '&&' if its condition is always true
+        else if ((U8Interrupt_Number >31) && (U8Interrupt_Number <=63))
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+NVIC_Program.c(89): note: initialize the variable 'Value' to silence this warning
+        uint8 Value  ; 
+                   ^
+                    = '\0'
+3 warnings generated.
+compiling NVIC_Program.c...
+compiling RCC_Program.c...
+GPIO_Program.c(20): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOA_MODER |= (Mode <<(PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(22): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOB_MODER |= (Mode << (PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(25): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOC_MODER |= (Mode << (PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(28): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOD_MODER |= (Mode << (PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(31): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOE_MODER |= (Mode << (PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(34): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOF_MODER |= (Mode <<(PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(37): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOG_MODER |= (Mode << (PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(41): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOH_MODER |= (Mode << (PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(58): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOA_OTYPER |= (OUTPUT_TYPE <<(PIN_NUMBER )); break;
+                                     ~~  ~~~~~~~~~~~~^~~~~~~~~~~~~~~
+GPIO_Program.c(60): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOB_OTYPER |= (OUTPUT_TYPE << (PIN_NUMBER )); break;
+                                     ~~  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+GPIO_Program.c(63): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOC_OTYPER |= (OUTPUT_TYPE << (PIN_NUMBER )); break;
+                                     ~~  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+GPIO_Program.c(66): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOD_OTYPER |= (OUTPUT_TYPE << (PIN_NUMBER )); break;
+                                     ~~  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+GPIO_Program.c(69): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOE_OTYPER |= (OUTPUT_TYPE << (PIN_NUMBER )); break;
+                                     ~~  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+GPIO_Program.c(72): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOF_OTYPER |= (OUTPUT_TYPE <<(PIN_NUMBER )); break;
+                                     ~~  ~~~~~~~~~~~~^~~~~~~~~~~~~~~
+GPIO_Program.c(75): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOG_OTYPER |= (OUTPUT_TYPE << (PIN_NUMBER )); break;
+                                     ~~  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+GPIO_Program.c(79): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOH_OTYPER |= (OUTPUT_TYPE << (PIN_NUMBER )); break;
+                                     ~~  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+GPIO_Program.c(96): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOA_OSPEEDR |= (OUTPUT_Speed <<(PIN_NUMBER * 2)); break;
+                                      ~~  ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(98): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOB_OSPEEDR |= (OUTPUT_Speed << (PIN_NUMBER * 2)); break;
+                                      ~~  ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(100): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOC_OSPEEDR |= (OUTPUT_Speed << (PIN_NUMBER * 2)); break;
+                                      ~~  ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(103): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOD_OSPEEDR |= (OUTPUT_Speed << (PIN_NUMBER * 2)); break;
+                                      ~~  ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(106): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOE_OSPEEDR |= (OUTPUT_Speed << (PIN_NUMBER * 2)); break;
+                                      ~~  ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(109): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOF_OSPEEDR |= (OUTPUT_Speed <<(PIN_NUMBER * 2)); break;
+                                      ~~  ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(112): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOG_OSPEEDR |= (OUTPUT_Speed << (PIN_NUMBER * 2)); break;
+                                      ~~  ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(116): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOH_OSPEEDR |= (OUTPUT_Speed << (PIN_NUMBER * 2)); break;             
+                                      ~~  ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(135): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOA_PUPDR |= (PULL_Type << (PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(137): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOB_PUPDR |= (PULL_Type << (PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(140): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOC_PUPDR |= (PULL_Type << (PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(143): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOD_PUPDR |= (PULL_Type << (PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(146): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOE_PUPDR |= (PULL_Type << (PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(149): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOF_PUPDR |= (PULL_Type << (PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(152): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOG_PUPDR |= (PULL_Type << (PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(155): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOH_PUPDR |= (PULL_Type<< (PIN_NUMBER * 2)); break;
+                                    ~~  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(174): warning: implicit conversion loses integer precision: 'unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                        Value = (GPIOA_IDR & (1U<<PIN_NUMBER)); break;
+                              ~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(176): warning: implicit conversion loses integer precision: 'unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                        Value = (GPIOB_IDR & (1U<<PIN_NUMBER)); break;
+                              ~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(179): warning: implicit conversion loses integer precision: 'unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                        Value = (GPIOC_IDR & (1U<<PIN_NUMBER)); break;
+                              ~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(182): warning: implicit conversion loses integer precision: 'unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                        Value = (GPIOD_IDR & (1U<<PIN_NUMBER)); break;
+                              ~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(185): warning: implicit conversion loses integer precision: 'unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                        Value = (GPIOE_IDR & (1U<<PIN_NUMBER)); break;
+                              ~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(188): warning: implicit conversion loses integer precision: 'unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                        Value = (GPIOF_IDR & (1U<<PIN_NUMBER)); break;
+                              ~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(191): warning: implicit conversion loses integer precision: 'unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                        Value = (GPIOG_IDR & (1U<<PIN_NUMBER)); break;
+                              ~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(195): warning: implicit conversion loses integer precision: 'unsigned long' to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                        Value = (GPIOH_IDR & (1U<<PIN_NUMBER)); break;
+                              ~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(212): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOA_ODR |= (Value<<(PIN_NUMBER )); break;
+                                  ~~  ~~~~~^~~~~~~~~~~~~~~
+GPIO_Program.c(214): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOB_ODR |= (Value<<(PIN_NUMBER )); break;
+                                  ~~  ~~~~~^~~~~~~~~~~~~~~
+GPIO_Program.c(217): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOC_ODR |= (Value<<(PIN_NUMBER )); break;
+                                  ~~  ~~~~~^~~~~~~~~~~~~~~
+GPIO_Program.c(220): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOD_ODR |= (Value<<(PIN_NUMBER )); break;
+                                  ~~  ~~~~~^~~~~~~~~~~~~~~
+GPIO_Program.c(223): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOE_ODR |= (Value<<(PIN_NUMBER )); break;
+                                  ~~  ~~~~~^~~~~~~~~~~~~~~
+GPIO_Program.c(226): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOF_ODR |= (Value<<(PIN_NUMBER )); break;
+                                  ~~  ~~~~~^~~~~~~~~~~~~~~
+GPIO_Program.c(229): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOG_ODR |= (Value<<(PIN_NUMBER )); break;
+                                  ~~  ~~~~~^~~~~~~~~~~~~~~
+GPIO_Program.c(233): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOH_ODR |= (Value<<(PIN_NUMBER )); break;
+                                  ~~  ~~~~~^~~~~~~~~~~~~~~
+GPIO_Program.c(243): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOA_ODR &=~ (Value<<(PIN_NUMBER )); break;
+                                  ~~^~~~~~~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(245): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOB_ODR &=~ (Value<<(PIN_NUMBER )); break;
+                                  ~~^~~~~~~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(248): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOC_ODR &=~ (Value<<(PIN_NUMBER )); break;
+                                  ~~^~~~~~~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(251): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOD_ODR &=~ (Value<<(PIN_NUMBER )); break;
+                                  ~~^~~~~~~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(254): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOE_ODR &=~ (Value<<(PIN_NUMBER )); break;
+                                  ~~^~~~~~~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(257): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOF_ODR &=~ (Value<<(PIN_NUMBER )); break;
+                                  ~~^~~~~~~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(260): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOG_ODR &=~ (Value<<(PIN_NUMBER )); break;
+                                  ~~^~~~~~~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(264): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOH_ODR &=~ (Value<<(PIN_NUMBER )); break;
+                                  ~~^~~~~~~~~~~~~~~~~~~~~~~~
+GPIO_Program.c(354): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOA_AFRL |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(356): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOB_AFRL |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(359): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOC_AFRL |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(362): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOD_AFRL |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(365): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOE_AFRL |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(368): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOF_AFRL |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(371): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOG_AFRL |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(374): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOH_AFRL |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(387): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOA_AFRH |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(389): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOB_AFRH |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(392): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOC_AFRH |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(395): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOD_AFRH |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(398): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOE_AFRH |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(401): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOF_AFRH |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(404): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOG_AFRH |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+GPIO_Program.c(407): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIOH_AFRH |= (ALT_value << (PIN_NUMBER *4)); break;
+                                   ~~  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+72 warnings generated.
+compiling GPIO_Program.c...
+EXTI_Program.c(62): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                SYSCFG_EXTICR1 &=~(0b1111<<(Number_OF_line*4));
+                                   ^
+EXTI_Program.c(69): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                SYSCFG_EXTICR2 &=~(0b1111<<(Number_OF_line*4));
+                                   ^
+EXTI_Program.c(76): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                SYSCFG_EXTICR3 &=~(0b1111<<(Number_OF_line*4));
+                                   ^
+EXTI_Program.c(83): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                SYSCFG_EXTICR4 &=~(0b1111<<(Number_OF_line*4));
+                                   ^
+EXTI_Program.c(100): warning: unused function 'EXTI0_IRQHandler' [-Wunused-function]
+static void EXTI0_IRQHandler (void)
+            ^
+5 warnings generated.
+compiling EXTI_Program.c...
+SYSTICK_Program.c(34): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        SYSPTR -> CTRL &=~(1<<0);
+                       ~~^~~~~~~
+SYSTICK_Program.c(80): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                SYSPTR -> CTRL &=~(1<<1);
+                               ~~^~~~~~~
+SYSTICK_Program.c(82): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                SYSPTR -> CTRL &=~(1<<0);
+                               ~~^~~~~~~
+SYSTICK_Program.c(120): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                SYSPTR -> CTRL &=~(1<<1);
+                               ~~^~~~~~~
+SYSTICK_Program.c(122): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                SYSPTR -> CTRL &=~(1<<0);
+                               ~~^~~~~~~
+SYSTICK_Program.c(111): warning: unused function 'SysTick_Handler' [-Wunused-function]
+static void SysTick_Handler(void)
+            ^
+6 warnings generated.
+compiling SYSTICK_Program.c...
+DMA_Program.c(3): warning: In file included from...
+./DMA_interface.h(5): warning: In file included from...
+./DMA_Config.h(153): warning: no newline at end of file [-Wnewline-eof]
+#endif 
+       ^
+DMA_Program.c(3): warning: In file included from...
+./DMA_interface.h(63): warning: no newline at end of file [-Wnewline-eof]
+#endif 
+       ^
+DMA_Program.c(42): warning: implicit conversion changes signedness: 'int' to 'uint32' (aka 'unsigned long') [-Wsign-conversion]
+                                                DMA_1_PTR -> Stream_Number[Stream].DMA_CR = (Channel<< 25);     
+                                                                                          ~  ~~~~~~~^~~~~
+DMA_Program.c(46): warning: implicit conversion changes signedness: 'int' to 'uint32' (aka 'unsigned long') [-Wsign-conversion]
+                                                DMA_1_PTR -> Stream_Number[Stream].DMA_CR = (Channel<< 25);     
+                                                                                          ~  ~~~~~~~^~~~~
+DMA_Program.c(50): warning: implicit conversion changes signedness: 'int' to 'uint32' (aka 'unsigned long') [-Wsign-conversion]
+                                                DMA_1_PTR -> Stream_Number[Stream].DMA_CR = (Channel<< 25);     
+                                                                                          ~  ~~~~~~~^~~~~
+DMA_Program.c(54): warning: implicit conversion changes signedness: 'int' to 'uint32' (aka 'unsigned long') [-Wsign-conversion]
+                                                DMA_1_PTR -> Stream_Number[Stream].DMA_CR = (Channel<< 25);     
+                                                                                          ~  ~~~~~~~^~~~~
+DMA_Program.c(58): warning: implicit conversion changes signedness: 'int' to 'uint32' (aka 'unsigned long') [-Wsign-conversion]
+                                                DMA_1_PTR -> Stream_Number[Stream].DMA_CR = (Channel<< 25);     
+                                                                                          ~  ~~~~~~~^~~~~
+DMA_Program.c(62): warning: implicit conversion changes signedness: 'int' to 'uint32' (aka 'unsigned long') [-Wsign-conversion]
+                                                DMA_1_PTR -> Stream_Number[Stream].DMA_CR = (Channel<< 25);     
+                                                                                          ~  ~~~~~~~^~~~~
+DMA_Program.c(65): warning: implicit conversion changes signedness: 'int' to 'uint32' (aka 'unsigned long') [-Wsign-conversion]
+                                                DMA_1_PTR -> Stream_Number[Stream].DMA_CR = (Channel<< 25);     
+                                                                                          ~  ~~~~~~~^~~~~
+DMA_Program.c(68): warning: implicit conversion changes signedness: 'int' to 'uint32' (aka 'unsigned long') [-Wsign-conversion]
+                                                DMA_1_PTR -> Stream_Number[Stream].DMA_CR = (Channel<< 25);     
+                                                                                          ~  ~~~~~~~^~~~~
+DMA_Program.c(70): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                                                                                default : break;
+                                                                                ^
+DMA_Program.c(510): warning: no previous prototype for function 'DMA1_Call_Back' [-Wmissing-prototypes]
+void DMA1_Call_Back(void(*call_back_DMA_ptr)(void))
+     ^
+DMA_Program.c(510): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DMA1_Call_Back(void(*call_back_DMA_ptr)(void))
+^
+static 
+DMA_Program.c(9): warning: unused variable 'ptr_DMA2' [-Wunused-variable]
+static void (*ptr_DMA2)(void) = NULL ;
+              ^
+DMA_Program.c(519): warning: unused function 'DMA1_Stream0_IRQHandler' [-Wunused-function]
+static void DMA1_Stream0_IRQHandler (void)
+            ^
+DMA_Program.c(538): warning: unused function 'DMA1_Stream1_IRQHandler' [-Wunused-function]
+static void DMA1_Stream1_IRQHandler (void)
+            ^
+DMA_Program.c(557): warning: unused function 'DMA1_Stream2_IRQHandler' [-Wunused-function]
+static void DMA1_Stream2_IRQHandler (void)
+            ^
+DMA_Program.c(576): warning: unused function 'DMA1_Stream3_IRQHandler' [-Wunused-function]
+static void DMA1_Stream3_IRQHandler (void)
+            ^
+DMA_Program.c(596): warning: unused function 'DMA1_Stream4_IRQHandler' [-Wunused-function]
+static void DMA1_Stream4_IRQHandler (void)
+            ^
+DMA_Program.c(616): warning: unused function 'DMA1_Stream5_IRQHandler' [-Wunused-function]
+static void DMA1_Stream5_IRQHandler (void)
+            ^
+DMA_Program.c(635): warning: unused function 'DMA1_Stream6_IRQHandler' [-Wunused-function]
+static void DMA1_Stream6_IRQHandler (void)
+            ^
+DMA_Program.c(654): warning: unused function 'DMA1_Stream7_IRQHandler' [-Wunused-function]
+static void DMA1_Stream7_IRQHandler (void)
+            ^
+21 warnings generated.
+compiling DMA_Program.c...
+compiling DOTMATRIX_Program.c...
+compiling main.c...
+compiling system_stm32f4xx.c...
+assembling startup_stm32f429xx.s...
+linking...
+Program Size: Code=1972 RO-data=444 RW-data=0 ZI-data=1648  
+".\Objects\ARM.axf" - 0 Error(s), 107 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\MELMA\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\MELMA\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   MDK\Device\Source\ARM\STM32F42xxx_43xxx_OPT.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:12
+</pre>
+</body>
+</html>

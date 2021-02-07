@@ -1,0 +1,22 @@
+#ifndef SYSTICK_CONFIG_H_ 
+
+#define SYSTICK_CONFIG_H_
+/* 
+IF SRC CLOCK IS AHB  		
+
+OR
+
+ELSE SRC_CLOCK IS AHB_8 	 
+*/ 
+
+
+#define SYSTICK_SRC_CLOCK  SYS_CLOCK_MODE_AHB 
+
+
+
+
+
+
+
+
+#endif
